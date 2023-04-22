@@ -1,0 +1,97 @@
+$borders: rgba(119, 122, 146, 0.5);
+$VeryLightGray: hsl(0, 0%, 98%);
+$VeryLightGrayishBlue: hsl(236, 33%, 92%);
+$LightGrayishBlue: hsl(233, 11%, 84%);
+$DarkGrayishBlue: hsl(236, 9%, 61%);
+$VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.theme-light {
+  background-color: $VeryLightGrayishBlue !important;
+  
+  button, p, h5 {
+    color: $VeryDarkGrayishBlue !important;
+  }
+  .completed-task {
+    color: $DarkGrayishBlue !important;
+  }
+
+  #task-input, ul, li, section {
+    background-color: $VeryLightGray !important;
+  }
+}
+
+
+input, ul, li, section {
+  background-color: hsl(235, 24%, 19%) !important;
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+  height: 100vh;
+  width: 100vw;
+  picture {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  main {
+    position: relative;
+    > span {
+      letter-spacing: 0.9rem;
+    }
+    form {
+      #task-input {
+        &::placeholder {
+          color: $borders;
+        }
+      }
+      #btn-create-task {
+        &:active {
+          border-top: none;
+          border-right: none;
+          border-bottom: none;
+        }
+        border-left: 1px solid $borders;
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    ul {
+      height: 55vh;
+      overflow: hidden;
+      li {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+        border-bottom: 1px solid $borders  !important;
+        input {
+          background-color: transparent !important;
+        }
+        &.completed-task {
+          color: $borders !important;
+          text-decoration: line-through;
+          input {
+            background-color: blue !important;
+          }
+        }
+        span {
+          input {
+            border-radius: 100% !important;
+            border-color: $borders !important;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}

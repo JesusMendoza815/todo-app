@@ -1,0 +1,83 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.theme-light {
+  background-color: hsl(236, 33%, 92%) !important;
+}
+.theme-light button, .theme-light p, .theme-light h5 {
+  color: hsl(235, 19%, 35%) !important;
+}
+.theme-light .completed-task {
+  color: hsl(236, 9%, 61%) !important;
+}
+.theme-light #task-input, .theme-light ul, .theme-light li, .theme-light section {
+  background-color: hsl(0, 0%, 98%) !important;
+}
+
+input, ul, li, section {
+  background-color: hsl(235, 24%, 19%) !important;
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+  height: 100vh;
+  width: 100vw;
+}
+body picture {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+body picture img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main {
+  position: relative;
+}
+body main > span {
+  letter-spacing: 0.9rem;
+}
+body main form #task-input::-moz-placeholder {
+  color: rgba(119, 122, 146, 0.5);
+}
+body main form #task-input::placeholder {
+  color: rgba(119, 122, 146, 0.5);
+}
+body main form #btn-create-task {
+  border-left: 1px solid rgba(119, 122, 146, 0.5);
+  position: absolute;
+  right: 0;
+}
+body main form #btn-create-task:active {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+body main ul {
+  height: 55vh;
+  overflow: hidden;
+}
+body main ul li {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-bottom: 1px solid rgba(119, 122, 146, 0.5) !important;
+}
+body main ul li input {
+  background-color: transparent !important;
+}
+body main ul li.completed-task {
+  color: rgba(119, 122, 146, 0.5) !important;
+  text-decoration: line-through;
+}
+body main ul li.completed-task input {
+  background-color: blue !important;
+}
+body main ul li span input {
+  border-radius: 100% !important;
+  border-color: rgba(119, 122, 146, 0.5) !important;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=index.css.map */
