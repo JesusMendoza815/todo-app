@@ -7,12 +7,13 @@ $VeryDarkGrayishBlue: hsl(235, 19%, 35%);
 
 * {
   font-family: "Josefin Sans", sans-serif;
+  transition: all 0.2s linear;
 }
 
 .theme-light {
   background-color: $VeryLightGrayishBlue !important;
   
-  button, p, h5 {
+  button, p, h5, small {
     color: $VeryDarkGrayishBlue !important;
   }
   .completed-task {

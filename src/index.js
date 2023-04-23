@@ -23,7 +23,6 @@ const validateData = (data) => {
   return !(!data.title);
 }
 
-
 btnNewTask.addEventListener('click', async () => {
   if (validateData(data)) {
     await postTask(data);
@@ -43,7 +42,12 @@ const renderTasks = async () => {
   let tasksList = await getTasks();
   for (const key in tasksList) {
     let { title, isActive } = tasksList[key];
-    ulDom.appendChild(createLiTask(title, isActive, key, deleteTaskById, renderTasks));
+    ulDom.appendChild(createLiTask(
+      title,
+      isActive,
+      key,
+      deleteTaskById,
+      renderTasks));
   }
 }
 

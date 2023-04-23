@@ -1,11 +1,12 @@
 * {
   font-family: "Josefin Sans", sans-serif;
+  transition: all 0.2s linear;
 }
 
 .theme-light {
   background-color: hsl(236, 33%, 92%) !important;
 }
-.theme-light button, .theme-light p, .theme-light h5 {
+.theme-light button, .theme-light p, .theme-light h5, .theme-light small {
   color: hsl(235, 19%, 35%) !important;
 }
 .theme-light .completed-task {
